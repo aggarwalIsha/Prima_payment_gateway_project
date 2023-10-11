@@ -1,0 +1,99 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primathon Academy payment gateway</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/header.PNG" class="header_logo" alt="primathon academy">
+        </header>
+        <div class="main">
+            <div>
+                <form method="post" id="form">
+                    <img src="images/rs.png" alt="rs_logo" class="rs_logo">
+                <label for="amount"><span class="colour_to_grey">Amount to Pay:</span></label>
+                <input type="text" id="amount" name="amount" required class="amount" placeholder="Enter Amount" oninput="formatCurrency(this)">
+
+                <span id="amountError"></span>
+
+            </div>
+
+            <div class="payment">
+            <div><div class="make_bold">Pay using UPI Apps</div>
+                <div class="pay_btn">
+                    
+                    <button class="btn PhonePe">
+                        <div class="inner_flex">
+                        <img src="images/phonePe.png" class="upi_logo" />
+                        <span>PhonePe</span>
+                        <img src="images/arrow.png" class="arrow_logo" />
+                        </div>
+                    
+                    </button>
+                    <button class="btn Google_Pay">
+                        <div class="inner_flex">
+                            <img src="images/google.png" class="upi_logo" />
+                            <span>Google Pay</span>
+                            <img src="images/arrow.png" class="arrow_logo" />
+                        </div>
+                        
+                    </button>
+                    <button class="btn Paytm">
+                        <div class="inner_flex">
+                            <img src="images/paytm.png" class="upi_logo" />
+                            <span>Paytm</span>
+                            <img src="images/arrow.png" class="arrow_logo" />
+                        </div>
+                    </button>
+                    <button class="btn bhim">
+                        <div class="inner_flex">
+                            <img src="images/bhim.png" class="upi_logo" />
+                            <span>BHIM</span>
+                            <img src="images/arrow.png" class="arrow_logo" />
+                        </div>
+                    </button>
+                
+            
+        </div>
+        <p class="no_options">No payment options available</p>
+            </div>
+            <div class="line_container">
+                <span class="line"></span>
+                <span class="or">or</span>
+                <span class="line"></span>
+            </div>
+            <div class="main">
+                <span class="make_bold">Get Payment link</span>
+               
+                <label for="phone">
+                    <span class="colour_to_grey">You will get a payment link on</span>
+                </label>
+                <div class="for_phone">
+                <input type="tel" id="phone" name="phone" class="phone_no make_bold" placeholder="Enter phone number" required>
+                <span id="phnError"></span>
+                <button type="submit" id="submit" class="send_btn make_bold">Send</button>
+                
+                </div>
+                </form>
+            </div>
+        </div>
+           
+            <div class="flex_button">
+                <div class="main">
+                    <span class="make_bold">Get Whatsapp and SMS Updates</span>
+                    <span class="colour_to_grey">Click on this to turn off updates.</span>
+                </div>
+                
+                <div><input type="checkbox" class="checkbox"></div>
+            </div>
+
+        </div>
+        <footer>
+            <span class="text_footer">Powered By</span>
+            <img src="images/footer.PNG" alt="primathon"class="footer_logo">
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

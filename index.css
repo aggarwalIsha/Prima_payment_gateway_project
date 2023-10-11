@@ -1,0 +1,199 @@
+.pay_btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.payment{
+    background: #e6f2ee;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    gap:1.1rem;
+}
+
+.btn {
+    background: #004b8d;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 0.3rem 0.3rem;
+    padding: 0 1rem;
+    color: white;
+    height:52px;
+  }
+
+.PhonePe .inner_flex, .Google_Pay .inner_flex, .bhim .inner_flex, .Paytm .inner_flex{
+    justify-content: space-between;
+  }
+  
+.flex_button{
+    display: flex;
+    justify-content: space-between;
+}
+html{
+    height:100%;
+}
+body{
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 375px;
+    margin:auto;
+    /*padding:auto; */
+}
+
+footer{
+    margin-top:auto;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer_logo{
+    height:40px;
+    vertical-align: middle; 
+    margin-left:3px;
+}
+.header_logo{
+    height:60px;
+}
+.text_footer{
+    vertical-align: middle; 
+    font-weight:bold;
+    color:grey;
+}
+.rs_logo{
+    height:11px;
+}
+.amount{
+    border:none;
+    outline:none;
+}
+.upi_logo{
+    height:30px;
+    border-radius:50%;
+    overflow:hidden;
+    vertical-align: middle; 
+    margin-left:0;
+}
+
+.arrow_logo{
+    height:30px;
+    vertical-align: middle;
+    border-radius:50%;
+}
+
+.make_bold{
+    font-weight: bold;
+}
+.colour_to_grey{
+    color:grey;
+}
+.phone_no{
+    border:none;
+    border-bottom:2px solid lightgrey;
+    flex-grow:1;
+    color:blue;
+    padding: 10px;
+    background: #e6f2ee;
+    outline:none;
+}
+.for_phone{
+    display:flex;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    gap:0.9rem;
+}
+
+.send_btn{
+    border: 2px solid grey;
+    color:blue;
+    width:5.5rem;
+    border-radius:5px;
+    background:white;
+}
+
+.checkbox{
+    height:30px;
+    width:30px;
+    margin-top:40%;
+}
+
+.line-container {
+    text-align: center; 
+}
+.or{
+    font-weight: bold;
+}
+.line {
+    display: inline-block; 
+    width: 39%;
+    border-top: 1px solid #333; 
+    margin: 0 10px; 
+}
+
+.btn .inner_flex {
+    display: flex;
+    align-items: center;
+  }
+
+.no_options{
+    display:none;
+}
+
+
+@media screen and (max-width: 480px) {
+   
+    .payment {
+        padding: 5px;
+    }
+    .btn {
+        height: 38px; 
+    }
+    .main {
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+    .send_btn{
+        width:3.5rem;
+    }
+    .inner_flex{
+        gap:1.3rem;
+    }
+   
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    
+    .payment {
+        padding: 10px; 
+    }
+    .btn {
+        height: 42px;
+    }
+    .main {
+        margin-left: 10px; 
+        margin-right: 10px; 
+    }
+    .send_btn{
+        width:4.5rem;
+    }
+    .pay_btn button{
+        display:block;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+   
+    .pay_btn button{
+        display:none;
+    }
+    .no_options{
+        display:block;
+    }
+    
+  }
